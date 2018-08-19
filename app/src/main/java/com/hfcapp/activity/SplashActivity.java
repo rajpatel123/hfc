@@ -5,7 +5,6 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.support.annotation.Nullable;
 import android.text.TextUtils;
-
 import com.hfcapp.R;
 import com.hfcapp.prefrences.MySharedPreference;
 

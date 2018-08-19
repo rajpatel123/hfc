@@ -11,7 +11,6 @@ import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
-import android.text.TextUtils;
 import android.util.Log;
 import android.view.GestureDetector;
 import android.view.MenuItem;
@@ -19,13 +18,18 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
-import android.widget.Button;
 import android.widget.TextView;
 
-import com.hfcapp.R;
 import com.hfcapp.adapter.HomeAdapter;
-import com.hfcapp.fragment.DashboardFragment;
+import com.hfcapp.fragment.MyHfcListFragment;
+import com.hfcapp.R;
+
+
 import com.hfcapp.prefrences.MySharedPreference;
+
+
+
+
 
 
 public class MainActivity extends BaseActivity {
@@ -33,9 +37,12 @@ public class MainActivity extends BaseActivity {
     //private PrefencesClass prefencesClass;
     //  ApplicationConstant _app;
     private final static String TAG_FRAGMENT = "TAG_FRAGMENT";
-    String TITLES[] = {"DashBoard","My Profile","Bank Details","My hfc List","Logout"};
+    //String TITLES[] = {"DashBoard","My Profile","Bank Details","My hfc List","Logout"};
+    String TITLES[] = {"My hfc List","Logout"};
 
-    int ICONS[] = {R.drawable.ic_dashboard,R.drawable.ic_user,R.drawable.ic_banck_details,R.drawable.ic_hfc,R.drawable.ic_logout};
+    //int ICONS[] = {R.drawable.ic_dashboard,R.drawable.ic_user,R.drawable.ic_banck_details,R.drawable.ic_user,R.drawable.ic_logout};
+
+    int ICONS[] = {R.drawable.ic_user,R.drawable.ic_logout};
 
     //Similarly we Create a String Resource for the name and email in the header view
     //And we also create a int resource for profile picture in the header view
@@ -136,6 +143,7 @@ public class MainActivity extends BaseActivity {
                     Intent _intent =null;
                     switch (position) {
                         case 0:
+
                           /*  Intent intent=new Intent(HomeActivity.this, ProfileActivity.class);
                             startActivity(intent);
                             finish();
@@ -143,8 +151,9 @@ public class MainActivity extends BaseActivity {
                             // startActivity(new Intent(MainActivity.this,ProfileActivity.class));
                             break;
                         case 1:
+                            fragment = new MyHfcListFragment();
                             //carrier moldule
-                            fragment = new DashboardFragment();
+                          //  fragment = new DashboardFragment();
                             break;
                         case 2:
                             //    fragment = new RentalFragment();
@@ -167,7 +176,7 @@ public class MainActivity extends BaseActivity {
 
                     if (fragment != null) {
                         clearBackStack();
-                        String _titlevalue[] = {"DashBoard","DashBoard","Active Rental","Activity"};
+                        String _titlevalue[] = {"My Hfc List","My Hfc List"};
 
                         FragmentManager fragmentManager = getSupportFragmentManager();
                         fragmentManager.beginTransaction()

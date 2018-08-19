@@ -2,6 +2,7 @@ package com.hfcapp.activity;
 
 import android.content.Context;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.widget.Toast;
 
 import com.hfcapp.R;
@@ -15,6 +16,7 @@ public class BaseActivity extends AppCompatActivity {
     /*come to back activity*/
     public void backIn()
     {
+        Log.e("backIn","isCalling");
         super.overridePendingTransition(R.anim.activity_back_in, R.anim.activity_back_out);
     }
 

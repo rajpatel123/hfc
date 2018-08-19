@@ -13,6 +13,9 @@ import com.hfcapp.R;
 import com.hfcapp.helper.FunctionHelper;
 import com.hfcapp.prefrences.MySharedPreference;
 
+
+
+
 public class LoginActivity extends BaseActivity implements View.OnClickListener {
 
     private EditText edUserName;
@@ -53,16 +56,16 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener 
         String password=edPassword.getText().toString();
         if(TextUtils.isEmpty(userName))
         {
-            Toast.makeText(LoginActivity.this,"Please enter user name.",Toast.LENGTH_SHORT).show();
+            Toast.makeText(LoginActivity.this, R.string.valid_please_enter_user_name,Toast.LENGTH_SHORT).show();
         }else if(TextUtils.isEmpty(password))
         {
-            Toast.makeText(LoginActivity.this,"Please enter password.",Toast.LENGTH_SHORT).show();
+            Toast.makeText(LoginActivity.this, R.string.valid_please_enter_password,Toast.LENGTH_SHORT).show();
 
         }else if(!userName.equalsIgnoreCase("admin"))
         {
-            Toast.makeText(LoginActivity.this,"Invalid UserName.",Toast.LENGTH_SHORT).show();
+            Toast.makeText(LoginActivity.this, R.string.valid_invalid_username,Toast.LENGTH_SHORT).show();
         }else if(!password.equalsIgnoreCase("admin")){
-            Toast.makeText(LoginActivity.this,"Invalid Password.",Toast.LENGTH_SHORT).show();
+            Toast.makeText(LoginActivity.this, R.string.valid_invalid_password,Toast.LENGTH_SHORT).show();
 
         }else
         {
