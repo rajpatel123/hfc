@@ -1,4 +1,4 @@
-package com.chainapp.activity;
+package com.hfcapp.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -6,7 +6,7 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.chainapp.R;
+import com.hfcapp.R;
 
 public class HomeActivity extends BaseActivity implements View.OnClickListener {
 

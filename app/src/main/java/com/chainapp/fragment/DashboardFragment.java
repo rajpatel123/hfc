@@ -1,4 +1,4 @@
-package com.chainapp.fragment;
+package com.hfcapp.fragment;
 
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -8,7 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.chainapp.R;
+import com.hfcapp.R;
 
 public class DashboardFragment extends Fragment {
     @Nullable

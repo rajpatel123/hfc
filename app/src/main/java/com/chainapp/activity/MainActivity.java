@@ -1,4 +1,4 @@
-package com.chainapp.activity;
+package com.hfcapp.activity;
 
 import android.content.BroadcastReceiver;
 import android.content.Intent;
@@ -22,10 +22,10 @@ import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.chainapp.R;
-import com.chainapp.adapter.HomeAdapter;
-import com.chainapp.fragment.DashboardFragment;
-import com.chainapp.prefrences.MySharedPreference;
+import com.hfcapp.R;
+import com.hfcapp.adapter.HomeAdapter;
+import com.hfcapp.fragment.DashboardFragment;
+import com.hfcapp.prefrences.MySharedPreference;
 
 
 public class MainActivity extends BaseActivity {
@@ -33,9 +33,9 @@ public class MainActivity extends BaseActivity {
     //private PrefencesClass prefencesClass;
     //  ApplicationConstant _app;
     private final static String TAG_FRAGMENT = "TAG_FRAGMENT";
-    String TITLES[] = {"DashBoard","My Profile","Bank Details","My Chain List","Logout"};
+    String TITLES[] = {"DashBoard","My Profile","Bank Details","My hfc List","Logout"};
 
-    int ICONS[] = {R.drawable.ic_dashboard,R.drawable.ic_user,R.drawable.ic_banck_details,R.drawable.ic_chain,R.drawable.ic_logout};
+    int ICONS[] = {R.drawable.ic_dashboard,R.drawable.ic_user,R.drawable.ic_banck_details,R.drawable.ic_hfc,R.drawable.ic_logout};
 
     //Similarly we Create a String Resource for the name and email in the header view
     //And we also create a int resource for profile picture in the header view

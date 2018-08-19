@@ -1,4 +1,4 @@
-package com.chainapp.helper;
+package com.hfcapp.helper;
 
 import android.app.Activity;
 import android.app.ActivityManager;

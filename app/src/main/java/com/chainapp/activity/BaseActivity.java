@@ -1,10 +1,10 @@
-package com.chainapp.activity;
+package com.hfcapp.activity;
 
 import android.content.Context;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.Toast;
 
-import com.chainapp.R;
+import com.hfcapp.R;
 
 public class BaseActivity extends AppCompatActivity {
     /*open new activity*/

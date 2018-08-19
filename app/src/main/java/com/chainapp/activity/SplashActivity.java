@@ -1,4 +1,4 @@
-package com.chainapp.activity;
+package com.hfcapp.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -6,8 +6,8 @@ import android.os.Handler;
 import android.support.annotation.Nullable;
 import android.text.TextUtils;
 
-import com.chainapp.R;
-import com.chainapp.prefrences.MySharedPreference;
+import com.hfcapp.R;
+import com.hfcapp.prefrences.MySharedPreference;
 
 public class SplashActivity extends BaseActivity {
     private final int SPLASH_STATUS=3000;

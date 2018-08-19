@@ -1,4 +1,4 @@
-package com.chainapp.adapter;
+package com.hfcapp.adapter;
 
 public class ListAdapter {
 }

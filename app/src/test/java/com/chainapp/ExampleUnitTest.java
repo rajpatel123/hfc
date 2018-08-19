@@ -1,4 +1,4 @@
-package com.chainapp;
+package com.hfcapp;
 
 import org.junit.Test;
 

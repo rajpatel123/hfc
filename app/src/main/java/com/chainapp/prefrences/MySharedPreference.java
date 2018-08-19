@@ -1,4 +1,4 @@
-package com.chainapp.prefrences;
+package com.hfcapp.prefrences;
 
 import android.content.Context;
 import android.content.SharedPreferences;

@@ -1,4 +1,4 @@
-package com.chainapp.activity;
+package com.hfcapp.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,9 +9,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.chainapp.R;
-import com.chainapp.helper.FunctionHelper;
-import com.chainapp.prefrences.MySharedPreference;
+import com.hfcapp.R;
+import com.hfcapp.helper.FunctionHelper;
+import com.hfcapp.prefrences.MySharedPreference;
 
 public class LoginActivity extends BaseActivity implements View.OnClickListener {
 

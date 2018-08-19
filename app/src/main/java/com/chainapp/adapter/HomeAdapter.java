@@ -1,4 +1,4 @@
-package com.chainapp.adapter;
+package com.hfcapp.adapter;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
@@ -8,7 +8,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.chainapp.R;
+import com.hfcapp.R;
 
 
 public class HomeAdapter  extends RecyclerView.Adapter<HomeAdapter.ViewHolder> {

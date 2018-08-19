@@ -1,11 +1,11 @@
-package com.chainapp.activity;
+package com.hfcapp.activity;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.view.View;
 import android.widget.ImageView;
 
-import com.chainapp.R;
+import com.hfcapp.R;
 
 public class AccountDetailsActivity extends BaseActivity {
 
