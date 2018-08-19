@@ -1,0 +1,39 @@
+*.iml
+.gradle
+/local.properties
+/.idea/workspace.xml
+/.idea/libraries
+/.idea
+/.idea/*
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+
+gradle/
+gradlew
+gradlew.bat
+
+app/app-release.apk
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.defaultSettings
+.springBeans
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
