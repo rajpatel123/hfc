@@ -1,4 +1,4 @@
-package com.chainapp.model;
+package com.hfcapp.model;
 
 public class LoginRequestModel {
     public String getEmailAddress() {

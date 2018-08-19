@@ -1,4 +1,4 @@
-package com.chainapp.retrofit;
+package com.hfcapp.retrofit;
 
 
 import com.hfcapp.BuildConfig;
