@@ -10,4 +10,8 @@
     <string name="text_forgot_password">Forgot Password</string>
     <string name="text_password">Password</string>
     <string name="text_surrey_bike_email_or_phone">HFC email or phone</string>
+    <string name="valid_please_enter_user_name">Please enter user name.</string>
+    <string name="valid_please_enter_password">Please enter password.</string>
+    <string name="valid_invalid_username">Invalid UserName.</string>
+    <string name="valid_invalid_password">Invalid Password.</string>
 </resources>
