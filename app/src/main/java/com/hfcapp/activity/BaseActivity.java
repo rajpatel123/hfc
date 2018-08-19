@@ -1,13 +1,13 @@
 package com.hfcapp.activity;
 
+import android.app.Activity;
 import android.content.Context;
-import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.widget.Toast;
 
 import com.hfcapp.R;
 
-public class BaseActivity extends AppCompatActivity {
+public class BaseActivity extends A{
     /*open new activity*/
     public void activityIn() {
         //calling to predefine method

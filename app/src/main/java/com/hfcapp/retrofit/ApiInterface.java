@@ -1,13 +1,28 @@
 package com.hfcapp.retrofit;
 
 
+
 import com.hfcapp.model.LoginRequestModel;
 import com.hfcapp.model.LoginResponse;
 
+import org.json.JSONObject;
+
+import java.util.HashMap;
+import java.util.List;
+
+import okhttp3.ResponseBody;
 import retrofit2.Call;
+import retrofit2.Response;
 import retrofit2.http.Body;
+import retrofit2.http.DELETE;
+import retrofit2.http.GET;
+import retrofit2.http.Header;
 import retrofit2.http.Headers;
 import retrofit2.http.POST;
+import retrofit2.http.PUT;
+import retrofit2.http.Path;
+import retrofit2.http.Query;
+import retrofit2.http.Url;
 
 public interface ApiInterface {
 
@@ -16,36 +31,12 @@ public interface ApiInterface {
             "User-Agent: Your-App-Name"
     })
 
-    @POST("/api/account/Authenticate")
-    Call<LoginRequestModel> login(@Body LoginResponse dataObject);
-
-
-
-//    @GET("/api/devices/details/{deviceId}")
-//    @Headers({"Content-Type: application/json", "Accept: application/json"})
-////    Call<DeviceInfo> getDeviceInformation(@Path("deviceId") String deviceId, @Header("X-Authorization-Firebase") String access_token);
+    @POST("/devices/register")
+    Call<LoginResponse> login(@Body LoginRequestModel dataObject);
 
 //
-//    @POST("api/users/order")
+//    @POST("/api/devices")
 //    @Headers({"Content-Type: application/json", "Accept: application/json"})
-//    Call<Order> createOrder(@Header("X-Authorization-Firebase") String access_token, @Body PlaceOrder order);
-//
-//    @PUT("api/users/initiate-payment/{id}")
-//    @Headers({"Content-Type: application/json", "Accept: application/json"})
-//    Call<InitiatePaymentResponse> initiate_payment(@Header("X-Authorization-Firebase") String access_token, @Path("id") String orderNumber);
-//
-//    @POST("api/users/update-user")
-//    @Headers({"Content-Type: application/json", "Accept: application/json"})
-//    Call<ResponseBody> updateUser(@Body UpdateUser updateUser);
-//
-//    @DELETE("/api/userimage")
-//    @Headers({"Content-Type: application/json", "Accept: application/json"})
-//    Call<JSONObject> deleteImage(@Header("X-Authorization-Firebase") String access_token);
-//
-//
-//
-//    @POST("/api/userinfo")
-//    @Headers({"Content-Type: application/json", "Accept: application/json"})
-//    Observable<Response<ResponseBody>> sendFCMTokenToServer(@Body HashMap<String, String> body, @Header("X-Authorization-Firebase") String access_toke);
+//    Call<AddDeviceModelResponse> addDevice(@Body DeviceInformation deviceInformation, @Header("X-Authorization-Firebase") String access_token);
 
-}
+  }
