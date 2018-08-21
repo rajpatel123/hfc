@@ -14,4 +14,8 @@
     <string name="valid_please_enter_password">Please enter password.</string>
     <string name="valid_invalid_username">Invalid UserName.</string>
     <string name="valid_invalid_password">Invalid Password.</string>
+    <string name="text_congratulations">Congratulations</string>
+    <string name="text_your_account_has_been_created_to_activate_your_account_please_pay_5959_r_s">Your account has been created, To activate your account please pay 5959 R.S.</string>
+    <string name="text_pay_now">Pay Now</string>
+    <string name="text_under_development">Under Development</string>
 </resources>
