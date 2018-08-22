@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <ImageView
+        android:id="@+id/iv_back"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="@dimen/margin_15"
+        android:padding="20dp"
+        android:background="@drawable/ic_back_primary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+
+
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_gravity="center_horizontal"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_margin="@dimen/margin_15"
+            android:background="@drawable/ic_indian_currency"
+            android:layout_width="120dp"
+            android:layout_height="120dp" />
+
+
+        <TextView
+            android:layout_gravity="center_horizontal"
+            android:textSize="@dimen/sp45"
+            android:textColor="@color/c_primary"
+            android:text="@string/text_congratulations"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+
+        <TextView
+            android:layout_marginTop="@dimen/margin_5"
+            android:layout_marginLeft="@dimen/margin_20"
+            android:layout_marginRight="@dimen/margin_20"
+            android:gravity="center_horizontal"
+            android:textSize="@dimen/sp20"
+            android:textColor="@color/c_black"
+            android:text="@string/text_your_account_has_been_created_to_activate_your_account_please_pay_5959_r_s"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+
+
+
+        <Button
+            android:id="@+id/btn_pay_now"
+            android:elevation="10dp"
+            android:layout_marginTop="@dimen/margin_20"
+            android:layout_marginRight="@dimen/margin_20"
+            android:layout_marginLeft="@dimen/margin_20"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/text_pay_now"
+            android:textSize="@dimen/sp20"
+            android:textColor="@color/c_white"
+            android:background="@color/c_primary"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+</android.support.constraint.ConstraintLayout>
