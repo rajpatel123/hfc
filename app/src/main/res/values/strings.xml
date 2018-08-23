@@ -1,17 +1,543 @@
 <resources>
-    <string name="app_name">HFC</string>
-    <string name="text_add">Add</string>
-    <string name="text_user_details">User Details</string>
-    <string name="text_next">Next</string>
-    <string name="text_user_list">User List</string>
-    <string name="drawer_open">Open navigation drawer</string>
-    <string name="drawer_close">Close navigation drawer</string>
-    <string name="text_login">Login</string>
-    <string name="text_forgot_password">Forgot Password</string>
-    <string name="text_password">Password</string>
-    <string name="text_surrey_bike_email_or_phone">HFC email or phone</string>
-    <string name="valid_please_enter_user_name">Please enter user name.</string>
-    <string name="valid_please_enter_password">Please enter password.</string>
-    <string name="valid_invalid_username">Invalid UserName.</string>
-    <string name="valid_invalid_password">Invalid Password.</string>
+    <string name="app_name_with_logo">KENT SECURITY</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="name_hint">Full Name</string>
+    <string name="phone_hint">Mobile Number</string>
+    <string name="email_hint">Enter Email</string>
+    <string name="password_hint">Password</string>
+    <string name="confirm_password_hint">Confirm Password</string>
+    <string name="create_account">CREATE ACCOUNT</string>
+    <string name="submit">SUBMIT</string>
+    <string name="sign_up_with_google">SIGN UP WITH GOOGLE</string>
+    <string name="sign_up_with_facebook">SIGN UP WITH FACEBOOK</string>
+    <string name="have_account">Already have an account?</string>
+    <string name="sign_in"> Sign in</string>
+    <string name="sign_in_new"> Sign Up</string>
+    <string name="sign_in_title">Sign In</string>
+    <string name="login_account">LOGIN</string>
+    <string name="facebook_app_id_uat">1850011398396383</string>
+    <string name="facebook_app_id_dev">145656179638950</string>
+
+    <string name="fb_login_protocol_scheme">b1850011398396383</string>
+    <string name="no_internet">Please check your internet connection.</string>
+    <string name="sign_in_with_google">SIGN IN WITH GOOGLE</string>
+    <string name="sign_in_with_facebook">SIGN IN WITH FACEBOOK</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="map_view_tab">Map View</string>
+    <string name="my_devices_tab">Devices</string>
+    <string name="alert_tab">Alerts</string>
+    <string name="new_user">New Here?</string>
+    <string name="account">Account</string>
+    <string name="account_title">Account</string>
+    <string name="appDefaultSetting">Settings</string>
+    <string name="my_devices">My Devices</string>
+    <string name="map_view">Map View</string>
+    <string name="no_device">ADD DEVICE!</string>
+    <string name="serial_number_hint">Serial Number</string>
+    <string name="device_name_hint">Enter Device Name</string>
+    <string name="scan_text">Scan Here</string>
+    <string name="scan">SCAN</string>
+    <string name="addDevice">Add Device</string>
+    <string name="action_settings">Settings</string>
+    <string name="fragment_common">Fragment common</string>
+    <string name="next_fragment">Next Fragment</string>
+    <string name="forgot_password_form_title">FORGOT PASSWORD</string>
+    <string name="enter_email_hint">Please enter your registered email id.</string>
+    <string name="enter_otp_on_email">Please enter verification code sent on your email</string>
+    <string name="set_new_password">Set your new password</string>
+    <string name="new_password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="turn_off_alerts">Turn off Alerts</string>
+    <string name="deactivate">Deactivate</string>
+    <string name="delete">Delete</string>
+    <string name="no_sharing">NO SHARING FOUND</string>
+    <string name="speed_limit_lebel">SPEED LIMIT</string>
+    <string name="location_permission_denied">Location permission denied</string>
+    <string name="permission_required_toast">Location permission required</string>
+    <string name="permission_rationale_location">Required location permission</string>
+    <string name="Rs">\u20B9</string>
+    <string name="login_progress_msg">Please wait validating credentials...</string>
+    <string name="default_color">#77909A</string>
+    <string name="private_app_id">52eb51d852634633a3073f438dd3d696</string>
+    <!--<string name="private_app_id">4af8e752be2a4ae2a28a96437bd43a5e</string>-->
+
+    <array name="months">
+        <item>Feb 2017</item>
+        <item>Mar 2017</item>
+        <item>Apr 2017</item>
+        <item>May 2017</item>
+        <item>Jun 2017</item>
+        <item>Jul 2017</item>
+        <item>Aug 2017</item>
+        <item>Sep 2017</item>
+    </array>
+
+    <string-array name="device_colors">
+        <item>#EE3D34</item>
+        <item>#E91362</item>
+        <item>#8D3993</item>
+        <item>#63469A</item>
+        <item>#4653A0</item>
+        <item>#1B93F2</item>
+        <item>#17A6F3</item>
+        <item>#17BBD4</item>
+        <item>#0E9787</item>
+        <item>#45B04F</item>
+        <item>#86C648</item>
+        <item>#CCDF34</item>
+        <item>#FEEE34</item>
+        <item>#FEC029</item>
+        <item>#C3996B</item>
+        <item>#5F7C8A</item>
+        <item>#9D9D9D</item>
+        <item>#795548</item>
+        <item>#FD521B</item>
+        <item>#9EAEC6</item>
+    </string-array>
+
+
+    <string name="loading">Loading...</string>
+
+    <string name="no_shared_user_found">NO USER FOUND</string>
+    <string name="device_sharing_msg">want to share the device with you.</string>
+    <string name="ok">OK</string>
+    <string name="skip">SKIP</string>
+
+    <string name="about_title">About</string>
+    <string name="about_kent_security">KENT SECURITY</string>
+    <string name="account_about">About</string>
+    <string name="account_about_rate">Rate us on Play Store</string>
+    <string name="account_about_send_feedback">Share Feedback</string>
+    <string name="account_about_tnc">Terms &amp; Conditions</string>
+    <string name="account_about_privacy_policy">Privacy Policy</string>
+    <string name="account_about_us">About Us</string>
+    <string name="account_usage">USAGE</string>
+    <string name="account_usage_of_mobile_data">of Mobile Data</string>
+    <string name="account_data_usage_title">Data Usage</string>
+    <string name="account_usages_by_devices">USAGES BY DEVICES</string>
+    <string name="account_settings_title">Settings</string>
+    <string name="account_units_title">Units</string>
+    <string name="account_units_kmph">KMPH</string>
+    <string name="account_units_mph">MILE/H</string>
+    <string name="account_units_speed">SPEED</string>
+    <string name="account_units_gmt">GMT</string>
+    <string name="account_units_ampm">AM/PM</string>
+    <string name="account_units_time">TIME</string>
+    <string name="account_units_mile">MILE</string>
+    <string name="account_units_km">KM</string>
+    <string name="account_units_distance">DISTANCE</string>
+    <string name="account_units_fehrenheit">F</string>
+    <string name="account_units_celcius">C</string>
+    <string name="account_units_temperature">TEMPERATURE</string>
+    <string name="account_units_hertz">HZ</string>
+    <string name="account_units_db">DB</string>
+    <string name="account_units_sound">SOUND</string>
+    <string name="activity_add_debitcredit_title">Add Debit/Credit Card</string>
+    <string name="addcard_card_number">Card Number</string>
+    <string name="addcard_name_on_card">Name on Card</string>
+    <string name="addcard_expiry_mm">Expiry (MM)</string>
+    <string name="addcard_expiry_yy">Expiry (YY)</string>
+    <string name="addcard_card_lebel_optional">Card Lebel (Optional)</string>
+    <string name="addcard_save_debit_credit_card">SAVE DEBIT/CREDIT CARD</string>
+    <string name="activity_audio_player_title">Trip Audio</string>
+    <string name="audio_player_repeat">Repeat</string>
+    <string name="audio_player_shuffle">Suffle</string>
+    <string name="activity_change_password_title">Change Password</string>
+    <string name="enter_old_password">Enter Current Password</string>
+    <string name="enter_new_password">Enter New Password</string>
+    <string name="re_enter_new_password">Confirm New Password</string>
+    <string name="change_password_change">UPDATE PASSWORD</string>
+    <string name="change_password_tracker">Tracker</string>
+    <string name="change_password_choose_option">Choose option</string>
+    <string name="change_password_view_profile">View Profile</string>
+    <string name="change_password_change_profile">Change Profile</string>
+    <string name="change_password_cancel">Cancel</string>
+    <string name="device_detail_reset_to_default">Reset to Default</string>
+    <string name="device_detail_replicate_on_other_devices">Replicate on other Devices</string>
+    <string name="device_detail_tracker_for_truck">Tracker For Truck</string>
+    <string name="device_detail_safewheels_pro">SafeWheels Pro</string>
+    <string name="device_list_commit_data_from_696466">Commit Data From 696466</string>
+    <string name="device_list_commit_data_from_696474">Commit Data From 696474</string>
+    <string name="device_list_enable_listening_696466">Enable listening 696466</string>
+    <string name="device_list_enable_listening_696474">Enable listening 696474</string>
+    <string name="device_list_show_sync_users">Show Sync Users</string>
+    <string name="device_list_get_trips_66">Get Trips 66</string>
+    <string name="device_list_get_trips_74">Get Trips 74</string>
+    <string name="device_list_clear_log">Clear Log</string>
+    <string name="device_list_log"><![CDATA[Log=========================>]]></string>
+    <string name="activity_edit_card_lebel_title">Edit Card Lebel</string>
+    <string name="edit_card_save">SAVE</string>
+    <string name="account_edit_title">Account Edit</string>
+    <string name="account_edit_enter_full_name">Enter Full Name</string>
+    <string name="hint_enter_email">Email</string>
+    <string name="edit_profile_enter_phone_number">Enter Phone Number</string>
+    <string name="edit_profile_save">SAVE</string>
+    <string name="edit_profile_tracker">Tracker</string>
+    <string name="edit_profile_choose_option">Choose option</string>
+    <string name="edit_profile_view_profile">View Profile Image</string>
+    <string name="edit_profile_change_profile">Change Profile Image</string>
+    <string name="edit_profile_cancel">Cancel</string>
+    <string name="forgot_password_cancel">CANCEL</string>
+    <string name="forgot_password_next">NEXT</string>
+    <string name="hint_zero">0</string>
+    <string name="forgot_password_ok">OK</string>
+    <string name="acttivity_geofence_radius_title">Geofence Radius</string>
+    <string name="places_of_interest">Places of Interest</string>
+    <string name="add_place_of_interest">Add Place of Interest</string>
+    <string name="geofence_search_location_here">Search Location Here</string>
+    <string name="geofence_set_geofence_radius">Set Geofence Radius</string>
+    <string name="geofence_km">KM</string>
+    <string name="txt_button_save">SAVE</string>
+    <string name="activity_live_streaming_title">Capture Image</string>
+    <string name="live_stream_play">Play</string>
+    <string name="live_stream_record">Record</string>
+    <string name="live_stream_mute">Mute</string>
+    <string name="txt_back">Back</string>
+    <string name="notification_alert_detail">ALERT DETAIL</string>
+    <string name="notification_no_image_found">NO IMAGE FOUND!</string>
+    <string name="notification_trip_time_exceeded">TRIP TIME EXCEEDED</string>
+    <string name="txt_cancel">CANCEL</string>
+    <string name="txt_ok">OK</string>
+    <string name="settings_reset_to_default">Reset to Default</string>
+    <string name="settings_replicate_on_other_devices">Replicate on other Devices</string>
+    <string name="txt_reset_to_default">Reset to Default</string>
+    <string name="txt_replicate_on_other_devices">Replicate on other Devices</string>
+    <string name="activity_profile_title">Profile</string>
+    <string name="add_user">ADD USER</string>
+    <string name="color_picker_choose_color">Choose Color</string>
+    <string name="data_usage_name">Name</string>
+    <string name="device_info_no_data_recorded">No Data Recorded!</string>
+    <string name="device_info_no_data_recorded_last_updated_on">Last Updated On</string>
+    <string name="device_info_turn_off_alerts">Turn off Alerts</string>
+    <string name="txt_settings">Settings</string>
+    <string name="txt_deactivate">Deactivate</string>
+    <string name="txt_delete">Delete</string>
+    <string name="alert_trip_time_exceeded">TRIP TIME EXCEEDED</string>
+    <string name="device_list_safewheels_pro">SafeWheels Pro</string>
+    <string name="device_list_tracker_for_truck">Tracker For Truck</string>
+    <string name="device_list_device_deactivated">Device Deactivated</string>
+    <string name="device_list_last_updated_on">"Last Updated On "</string>
+    <string name="device_list_turn_off_alerts">Turn off Alerts</string>
+    <string name="device_list_0_km_h">0 KMPH</string>
+    <string name="device_list__0_km">0 KM</string>
+    <string name="device_list__0_c">0 C</string>
+    <string name="device_list__0_min">0 MIN</string>
+    <string name="device_list__0_db">0 DB</string>
+    <string name="dailog_stream_is_not_available">Stream is not available!</string>
+    <string name="try_again">Try Again</string>
+    <string name="txt_wait">Wait</string>
+    <string name="txt_edit">EDIT</string>
+    <string name="txt_units">Units</string>
+    <string name="data_usage">DATA USAGE</string>
+    <string name="account_payment">PAYMENT</string>
+    <string name="txt_change_password">Change Password</string>
+    <string name="txt_logout">LOGOUT</string>
+    <string name="account_balance">ACCOUNT BALANCE</string>
+    <string name="no_alerts_found">NO ALERTS FOUND!</string>
+    <string name="no_video_found">NO VIDEO FOUND!</string>
+    <string name="no_media_found">NO MEDIA FOUND!</string>
+    <string name="no_audio_found">NO AUDIO FOUND!</string>
+    <string name="usage">USAGE</string>
+    <string name="mobile_data_setting">MOBILE DATA SETTING</string>
+    <string name="data_usage_low">Low</string>
+    <string name="data_usage_medium">Medium</string>
+    <string name="data_usage_high">High</string>
+    <string name="data_usage_estimated_data_usage_hour">Estimated Data Usage/Hour</string>
+    <string name="data_usage__200_mb_hour">200 MB/Hour</string>
+    <string name="data_usage_upload_image_quality">Upload Image Quality</string>
+    <string name="data_usage_low_200_kb_max">Low(200 KB Max)</string>
+    <string name="data_usage_audio_quality">Audio Quality</string>
+    <string name="data_usage_low_1024_kb_max">Low(1024 KB Max)</string>
+    <string name="data_usage_data_capture_interval">Data Capture Interval</string>
+    <string name="device_info_name">Name</string>
+    <string name="hint_kent_truuck_2">Kent Truuck 2</string>
+    <string name="device_info_model_number">Model Number</string>
+    <string name="device_info_serial_number">Serial Number</string>
+    <string name="device_info_status">Status</string>
+    <string name="device_info_activated">Activated</string>
+    <string name="device_info_color">Color</string>
+    <string name="device_info_delete_device">DELETE DEVICE</string>
+    <string name="live_video_connecting">Establishing connection...</string>
+    <string name="live_video_capture_image">Capture Image</string>
+    <string name="live_video_play">Play</string>
+    <string name="live_video_record">Record</string>
+    <string name="live_video_mute">Mute</string>
+    <string name="live_video_last_updated_on">Last updated on </string>
+    <string name="real_time_running">RUNNING</string>
+    <string name="real_time_alerts">Alerts</string>
+    <string name="real_time_cannot_connect_with_device">CANNOT CONNECT WITH DEVICE</string>
+    <string name="setting_alerts">All Alerts</string>
+    <string name="simple_open_new_fragment">Open New Fragment</string>
+    <string name="trip_audio_not_available">Audio is not available</string>
+    <string name="_0_alert">0 ALERT</string>
+    <string name="txt_speed">SPEED</string>
+    <string name="txt_avg">AVG</string>
+    <string name="txt_max">MAX</string>
+    <string name="txt_temparature">TEMPARATURE</string>
+    <string name="txt_sound">SOUND</string>
+    <string name="not_available">Not Available</string>
+    <string name="no_trips_found">NO TRIPS FOUND</string>
+    <string name="mobile_number_paytm">Please enter mobile number associated with your Paytm account</string>
+    <string name="_91">+91</string>
+    <string name="enter_mobile_number">Enter Mobile</string>
+    <string name="txt_button_next">NEXT</string>
+    <string name="pay_mobile_wllet">PAY WITH YOUR MOBILE WLLET</string>
+    <string name="payment_method_delete_card">Delete Card</string>
+    <string name="payment_method_indusind_credit_card_ending_with_3847">IndusInd Credit Card (ending with 3847)</string>
+    <string name="payment_method_list_payment_method">PAYMENT METHOD</string>
+    <string name="payment_method_list_link_account">Link Account</string>
+    <string name="payment_method_list_add_new_debit_credit_cared">ADD NEW DEBIT/CREDIT CARED</string>
+    <string name="payment_method_enter_verification_code">Please enter verification code sent by paytm to 8185886155</string>
+    <string name="payment_method_resend_code">Resend Code</string>
+    <string name="txt_next">NEXT</string>
+    <string name="replicate_settings_on">REPLICATE SETTINGS ON</string>
+    <string name="all_devices">All Devices</string>
+    <string name="kent_car_tracker_2">KENT Car Tracker</string>
+    <string name="geofence_radius">GEOFENCE RADIUS</string>
+    <string name="rb">RB</string>
+    <string name="sharing_user_name">Name</string>
+    <string name="trip_audio_text_title">Text Title</string>
+    <string name="trip_audio_time_text">time text</string>
+    <string name="x_2">2x</string>
+    <string name="x_4">4x</string>
+    <string name="x_6">6x</string>
+
+
+    <string name="scan_barcode_button">Scan barcode</string>
+    <string name="no_barcode_captured">No barcode captured</string>
+    <string name="barcode_error_format">"Error reading barcode: %1$s"</string>
+    <string name="msg_confirm_exit">Press again to exit</string>
+
+    <!-- Strings related to barcode scanner -->
+    <string name="permission_camera_rationale">Access to the camera is needed for detection</string>
+    <string name="no_camera_permission">This application cannot run because it does not have the camera permission.  The application will now exit.</string>
+    <string name="low_storage_error">Face detector dependencies cannot be downloaded due to low device storage</string>
+    <string name="trip_playback">TRIP PLAYBACK</string>
+    <string name="txt_accept_sharing">Accept Sharing</string>
+    <string name="shareDevice">SHARE DEVICE</string>
+    <string name="txt_edit_profile">Edit Profile</string>
+    <string name="change">Change</string>
+    <string name="txt_edit_permissions">Edit Sharing</string>
+    <string name="view_video">VIEW VIDEO</string>
+    <string name="enter_email_forgot_Password_hint">Please enter your registered email ID</string>
+    <string name="no_user_found_with_email">Email ID is not registered with us, Please enter valid email ID</string>
+    <string name="library">Library</string>
+    <string name="enter_otp">Enter OTP</string>
+    <string name="pin_content_desc">0</string>
+    <string name="new_password_txt">New Password</string>
+    <string name="done">DONE</string>
+    <string name="max_chars">Max 1500 Characters</string>
+    <string name="share">SHARE</string>
+    <string name="resend_otp">RESEND OTP</string>
+    <string name="share_feedback">Share Feedback</string>
+    <string name="sharing_permissions">Sharing Permissions</string>
+    <string name="device_information">Device Information</string>
+    <string name="txt_deviceInformation">Device Information</string>
+    <string name="title_activity_set_geo_fence_new_ui">SetGeoFenceNewUIActivity</string>
+    <string name="title_activity_poi__curd_">Add Place of Interest</string>
+    <string name="back_button">str_back</string>
+    <string name="search_by_location">Search Location</string>
+    <string name="add_place">Add Place</string>
+    <string name="place_icon_description">place icon description</string>
+    <string name="name_of_place">Name of Place</string>
+    <string name="save">Save</string>
+    <string name="title_activity_device_info">Device Information</string>
+    <string name="device_info">Device Information</string>
+    <string name="device_status_text">Parked</string>
+    <string name="trip_videos">Trip Videos</string>
+    <string name="trip_media">Trip Media</string>
+    <string name="trip_Audios">Trip Audios</string>
+    <string name="trip_recorded">Recorded Videos</string>
+    <string name="trip_snap">Snapshots</string>
+    <string name="txt_video_lib">Video Library</string>
+    <string name="txt_audio_lib">Audio Library</string>
+    <string name="txt_recording_lib">Recorded Videos</string>
+    <string name="txt_snap_lib">Snapshots</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="out">Out</string>
+    <string name="in">In</string>
+    <string name="alert_on">Alert On</string>
+    <string name="txt_1_km">1 KM</string>
+    <string name="txt_100_km">100 Km</string>
+
+    <string name="_100_meter">100 m</string>
+    <string name="_5_km">5 KM</string>
+
+    <string name="upgrade">Upgrade</string>
+    <string name="subscription_txt">Subscriptions</string>
+    <string name="upgrade_to_premium_plan">Upgrade to Premium Plan</string>
+    <string name="taxes">+ Taxes</string>
+    <string name="premium_plan_features">Premium Plan Features</string>
+    <string name="txt_device_details">Device Details</string>
+    <string name="txt_subscription_details">Subscriptions Details</string>
+    <string name="renew">RENEW SUBSCRIPTION</string>
+    <string name="enter_serial_number">Serial number</string>
+    <string name="enter_name">Enter Name</string>
+    <string name="image">image</string>
+    <string name="pay_now">Pay Now</string>
+    <string name="default_device_color">9EAEC6</string>
+    <string name="fetching_devices">Fetching devices</string>
+    <string name="devices_not_found">Device not found</string>
+    <string name="owned_devices">Owned Devices</string>
+    <string name="parked">Parked</string>
+    <string name="accept">ACCEPT</string>
+    <string name="decline">DECLINE</string>
+    <string name="empty_dashes">---</string>
+    <string name="device_sharing_request_success">This device sharing request successfully sent to user %1$s</string>
+    <string name="device_sharing_request_input_email_valid">Please enter valid email.</string>
+    <string name="library_media_delete_confirmation">Are you sure you want to delete this Media file from library?</string>
+    <string name="library_snapshot_delete_confirmation">Are you sure you want to delete this Snapshot file from library?</string>
+    <string name="device_sharing_delete_user">Are you sure you want to delete sharing with user?</string>
+    <string name="user_password_regex_validation">Password must be atleast 8 characters, with atleast one capital, numeric and special character</string>
+    <string name="emailid_required_for_facebook_login">Email Id is mandatory to login via Facebook</string>
+    <string name="select_device">Select Device</string>
+    <string name="pakg_not_found">Package name not found.</string>
+    <string name="camera_changed_msg">Someone else had changed the camera view.</string>
+    <string name="invalid_qr">Please scan valid QR code.</string>
+    <string name="poi_limit_txt">You can create only 5 entries for places of interest, to create a new, please edit or delete one existing entry.</string>
+    <string name="inside">FRONT</string>
+    <string name="outside">BACK</string>
+    <string name="both">BOTH</string>
+    <string name="cancel">CANCEL</string>
+    <string name="password_policyTxt">Minimum 8 characters atleast one capital, number, and special character</string>
+    <string name="purchaseSubcription">Unable to stream. Please purchase the subscription plan for streaming service.</string>
+    <string name="streamPermission">Unable to stream. Activate video stream permission from Settings first.</string>
+    <string name="notPurchage">Unable to stream. Owner does not purchase the subscription plan for stream service.</string>
+    <string name="activateStream">Unable to stream. Activate streaming from setting first.</string>
+    <string name="notGraantedPermisssion">Unable to stream. Owner has not granted permission to view video stream.</string>
+    <string name="gettting_eady">Device is getting ready, please try again later for streaming.</string>
+    <string name="owner_deactivated">Unable to stream. owner has disabled streaming from setting.</string>
+    <string name="switch_front">Currently streaming is going on BACK camera. Do you still want to switch to FRONT camera</string>
+    <string name="switch_back">Currently streaming is going on FRONT camera. Do you still want to switch to BACK camera</string>
+    <string name="trip_share_txt">Please select time duration for sharing location</string>
+    <string name="trip_info">Trip Info</string>
+    <string name="device_name">Device Name</string>
+    <string name="serial_number">Serial Number</string>
+    <string name="trip_id">Trip Id</string>
+    <string name="trip_start_on">Trip Start on</string>
+    <string name="trip_end_on">Trip End on</string>
+    <string name="enter_activation_number">Activation code</string>
+    <string name="no_geofenceTxt">No Geo Fence set yet</string>
+    <string name="no_placeTxt">No place of Interest set yet</string>
+    <string name="duration_txt">Duration</string>
+    <string name="total_distance">Total Distance</string>
+    <string name="total_trips">Total Trips</string>
+    <string name="total_duration">Total Duration</string>
+    <string name="max_speed">Maximum Speed</string>
+    <string name="average_speed">Average Speed</string>
+    <string name="total_alerts">Total Alerts</string>
+    <string name="total_idelTime">Total Engine Idle Time</string>
+    <string name="total_distancePerDay">Average Distance/Day</string>
+
+    <string-array name="ticksSpeedArray">
+        <item>0</item>
+        <item>50</item>
+        <item>100</item>
+        <item>150</item>
+        <item>200</item>
+        <item>250</item>
+        <item>300</item>
+        <item>350</item>
+        <item>400</item>
+        <item>450</item>
+        <item>500</item>
+    </string-array>
+
+    <string-array name="speedLimitArray">
+        <item>0</item>
+        <item>10</item>
+        <item>20</item>
+        <item>30</item>
+        <item>40</item>
+        <item>50</item>
+        <item>60</item>
+        <item>70</item>
+        <item>80</item>
+        <item>90</item>
+        <item>100</item>
+    </string-array>
+
+
+    <string-array name="engineIdleTimeArray">
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+    </string-array>
+
+    <string-array name="tripTileLimitsArray">
+        <item>60</item>
+        <item>120</item>
+        <item>180</item>
+        <item>240</item>
+        <item>300</item>
+        <item>360</item>
+        <item>420</item>
+        <item>480</item>
+        <item>540</item>
+        <item>600</item>
+        <item>660</item>
+    </string-array>
+
+    <string-array name="tempArray">
+        <item>0</item>
+        <item>10</item>
+        <item>20</item>
+        <item>30</item>
+        <item>40</item>
+        <item>50</item>
+        <item>60</item>
+        <item>70</item>
+        <item>80</item>
+        <item>90</item>
+        <item>100</item>
+    </string-array>
+
+
+    <string-array name="tripDistanceLimitArray">
+        <item>0</item>
+        <item>50</item>
+        <item>100</item>
+        <item>150</item>
+        <item>200</item>
+        <item>250</item>
+        <item>300</item>
+        <item>350</item>
+        <item>400</item>
+        <item>450</item>
+        <item>500</item>
+    </string-array>
+
+    <string-array name="maxTravelPerDayLimitArray">
+        <item>100</item>
+        <item>200</item>
+        <item>300</item>
+        <item>400</item>
+        <item>500</item>
+        <item>600</item>
+        <item>700</item>
+        <item>800</item>
+        <item>900</item>
+        <item>1000</item>
+        <item>1100</item>
+    </string-array>
+
+
+    <string-array name="soundLevelArray">
+        <item>Silent</item>
+        <item>Normal</item>
+        <item>Conversation</item>
+        <item>Playing Music</item>
+        <item>Loud</item>
+        <item>Shouting</item>
+    </string-array>
 </resources>
