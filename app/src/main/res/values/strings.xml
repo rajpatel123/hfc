@@ -540,4 +540,23 @@
         <item>Loud</item>
         <item>Shouting</item>
     </string-array>
+    <string name="app_name">HFC</string>
+    <string name="text_add">Add</string>
+    <string name="text_user_details">User Details</string>
+    <string name="text_next">Next</string>
+    <string name="text_user_list">User List</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="text_login">Login</string>
+    <string name="text_forgot_password">Forgot Password</string>
+    <string name="text_password">Password</string>
+    <string name="text_surrey_bike_email_or_phone">HFC email or phone</string>
+    <string name="valid_please_enter_user_name">Please enter user name.</string>
+    <string name="valid_please_enter_password">Please enter password.</string>
+    <string name="valid_invalid_username">Invalid UserName.</string>
+    <string name="valid_invalid_password">Invalid Password.</string>
+    <string name="text_congratulations">Congratulations</string>
+    <string name="text_your_account_has_been_created_to_activate_your_account_please_pay_5959_r_s">Your account has been created, To activate your account please pay 5959 R.S.</string>
+    <string name="text_pay_now">Pay Now</string>
+    <string name="text_under_development">Under Development</string>
 </resources>

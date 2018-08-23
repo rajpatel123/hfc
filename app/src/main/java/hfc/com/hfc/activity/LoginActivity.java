@@ -55,6 +55,13 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener 
     }
 
 
+
+  /*
+  *
+  * validate user data.
+  *
+  *
+  * */
     private void validateUserData() {
         String userName = edUserName.getText().toString();
         String password = edPassword.getText().toString();
@@ -72,15 +79,19 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener 
 
                 @Override
                 public void onResponse(Call<LoginResponse> call, Response<LoginResponse> response) {
-                    LoginResponse loginResponse = response.body();
-                    Utils.dismissProgressDialog();
-                    HFCPrefs.putBoolean(LoginActivity.this, Constants.USER_LOGGED_IN, true);
-                    HFCPrefs.putString(LoginActivity.this, Constants.ACCESS_TOKEN, loginResponse.getAccessToken());
-                    HFCPrefs.putString(LoginActivity.this, Constants.USER_NAME, loginResponse.getUser().getFirstName());
-                    Intent intent = new Intent(LoginActivity.this, MainActivity.class);
-                    startActivity(intent);
-                }
 
+                    if(response.isSuccessful()) {
+                        LoginResponse loginResponse = response.body();
+                        Utils.dismissProgressDialog();
+                        HFCPrefs.putBoolean(LoginActivity.this, Constants.USER_LOGGED_IN, true);
+                        HFCPrefs.putString(LoginActivity.this, Constants.ACCESS_TOKEN, loginResponse.getAccessToken());
+                        HFCPrefs.putString(LoginActivity.this, Constants.USER_NAME, loginResponse.getUser().getFirstName());
+                        Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+                        startActivity(intent);
+                        finish();
+                        activityIn();
+                    }
+                }
                 @Override
                 public void onFailure(Call<LoginResponse> call, Throwable t) {
                     Utils.dismissProgressDialog();
