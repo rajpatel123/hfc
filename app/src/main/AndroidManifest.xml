@@ -6,7 +6,7 @@
 <uses-permission android:name="android.permission.INTERNET"/>
     <application
         android:allowBackup="true"
-        android:icon="@drawable/rdrwable"
+        android:icon="@mipmap/logo"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
@@ -16,7 +16,7 @@
         </activity>
 
         <!--Splash Activity Theme-->
-        <activity android:name=".activity.SplashActivity"
+        <activity android:name=".activity.PaymentRequestActivity"
             android:windowSoftInputMode="stateHidden">
 
 
@@ -24,7 +24,7 @@
         <!--Splash Activity Theme-->
         <activity android:name=".activity.LoginActivity"
             android:windowSoftInputMode="stateHidden"
-            android:theme="@style/Theme.AppCompat.NoActionBar">
+            android:theme="@style/AppTheme">
 
         </activity>
 
@@ -32,7 +32,7 @@
         <!--Splash Activity Theme-->
         <activity android:name=".activity.AddUserActivity"
             android:windowSoftInputMode="stateHidden"
-            android:theme="@style/Theme.AppCompat.NoActionBar">
+            android:theme="@style/AppTheme">
         </activity>
 
         <!--AccountDetailsActivity  Theme-->
@@ -43,10 +43,10 @@
         <!--AccountDetailsActivity  Theme-->
         <activity android:name=".activity.MainActivity"
             android:windowSoftInputMode="stateHidden"
-            android:theme="@style/Theme.AppCompat.NoActionBar">
+            android:theme="@style/AppTheme">
         </activity>
 <!--Full Screen Theme-->
-        <activity android:name=".activity.PaymentRequestActivity"
+        <activity android:name=".activity.SplashActivity"
             android:theme="@style/FullScreenTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

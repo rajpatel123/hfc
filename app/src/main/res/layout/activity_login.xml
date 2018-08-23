@@ -10,7 +10,7 @@
         android:layout_centerHorizontal="true"
         android:text="SignIn"
         android:textSize="@dimen/sp30"
-        android:textColor="@color/c_white"
+        android:textColor="@color/white"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
@@ -46,7 +46,7 @@
                         android:id="@+id/ed_user_id"
                         android:maxLength="100"
                         android:textSize="@dimen/sp_edit_text_size"
-                        android:textColor="@color/c_black"
+                        android:textColor="@color/black"
                         android:inputType="textEmailAddress"
                         android:hint="UserId"
                         android:text="hindustanfundscarrier@gmail.com"
@@ -68,7 +68,7 @@
                         android:paddingEnd="@dimen/dp5"
                         android:text="pass@123"
                         android:textSize="@dimen/sp_edit_text_size"
-                        android:textColor="@color/c_black"
+                        android:textColor="@color/black"
                         android:background="@drawable/sd_edit_text"
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/dp_edit_text_height"/>
@@ -92,7 +92,7 @@
                 android:background="@drawable/sd_btn"
                 android:layout_width="@dimen/dp_button_width"
                 android:text="@string/text_login"
-                android:textColor="@color/c_primary"
+                android:textColor="@color/colorPrimary"
                 android:layout_height="@dimen/dp_button_height" />
 
         </LinearLayout>

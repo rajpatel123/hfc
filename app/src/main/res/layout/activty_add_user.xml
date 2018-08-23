@@ -1,272 +1,264 @@
 <?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
-    <LinearLayout
-        android:orientation="vertical"
-        xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-        android:layout_height="match_parent">
-        <android.support.v7.widget.Toolbar
-            android:background="@color/c_primary"
-            android:layout_width="match_parent"
-            android:layout_height="?actionBarSize">
-            <ImageView
-                android:id="@+id/iv_back"
-                android:background="@drawable/ic_back_white"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/colorPrimary">
 
-
-            <TextView
-                android:layout_gravity="center_horizontal"
-                android:textSize="@dimen/sp20"
-                android:textColor="@color/c_white"
-                android:text="@string/text_user_details"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_back_white" />
 
 
-        </android.support.v7.widget.Toolbar>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/text_user_details"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp20" />
+
+
+    </android.support.v7.widget.Toolbar>
+
     <ScrollView
-        xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
         <LinearLayout
-            android:layout_marginTop="@dimen/margin_20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/margin_20"
             android:layout_marginRight="@dimen/margin_20"
-            android:orientation="vertical"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_marginTop="@dimen/margin_20"
+            android:orientation="vertical">
 
 
             <TextView
-                android:textColor="@color/c_black"
-                android:textSize="@dimen/sp20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:text="Personal Details"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp20" />
 
-        <LinearLayout
-            android:orientation="vertical"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <android.support.design.widget.TextInputLayout
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp">
+                android:orientation="vertical">
 
-                <android.support.design.widget.TextInputEditText
-                    android:id="@+id/ed_first_name"
+                <android.support.design.widget.TextInputLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:hint="First Name"
-                    android:inputType="textPassword" />
-            </android.support.design.widget.TextInputLayout>
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
 
-            <android.support.design.widget.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp">
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/ed_first_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="First Name"
+                        android:inputType="textPassword" />
+                </android.support.design.widget.TextInputLayout>
 
-                <android.support.design.widget.TextInputEditText
-                    android:id="@+id/ed_last_name"
+                <android.support.design.widget.TextInputLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:hint="Last Name"
-                    android:inputType="textPassword" />
-            </android.support.design.widget.TextInputLayout>
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/ed_last_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="Last Name"
+                        android:inputType="textPassword" />
+                </android.support.design.widget.TextInputLayout>
 
 
-
-
-            <android.support.design.widget.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp">
-
-                <android.support.design.widget.TextInputEditText
-                    android:id="@+id/ed_phone_number"
+                <android.support.design.widget.TextInputLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:hint="Phone Number"
-                    android:inputType="number" />
-            </android.support.design.widget.TextInputLayout>
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/ed_phone_number"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="Phone Number"
+                        android:inputType="number" />
+                </android.support.design.widget.TextInputLayout>
 
 
-            <android.support.design.widget.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                >
-
-                <android.support.design.widget.TextInputEditText
-                    android:id="@+id/ed_email"
+                <android.support.design.widget.TextInputLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:hint="Email Address"
-                    android:inputType="text" />
-            </android.support.design.widget.TextInputLayout>
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
 
-            <android.support.design.widget.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp">
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/ed_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="Email Address"
+                        android:inputType="text" />
+                </android.support.design.widget.TextInputLayout>
 
-                <android.support.design.widget.TextInputEditText
-                    android:id="@+id/ed_address"
+                <android.support.design.widget.TextInputLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:hint="Address"
-                    android:inputType="text"
-                    />
-            </android.support.design.widget.TextInputLayout>
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
 
-            <android.support.design.widget.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp">
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/ed_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="Address"
+                        android:inputType="text" />
+                </android.support.design.widget.TextInputLayout>
 
-                <android.support.design.widget.TextInputEditText
-                    android:id="@+id/ed_pincode"
+                <android.support.design.widget.TextInputLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:hint="Pin Code"
-                    android:maxLength="8"
-                    android:inputType="number"
-                    />
-            </android.support.design.widget.TextInputLayout>
-        </LinearLayout>
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
 
-
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/ed_pincode"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="Pin Code"
+                        android:inputType="number"
+                        android:maxLength="8" />
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
 
 
             <TextView
-                android:layout_marginTop="@dimen/margin_10"
-                android:textColor="@color/c_black"
-                android:textSize="@dimen/sp20"
-                android:text="Account Details"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10"
+                android:text="Account Details"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp20" />
 
-                <LinearLayout
-                    android:layout_marginTop="@dimen/margin_10"
-                    android:orientation="vertical"
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10"
+                android:orientation="vertical">
+
+
+                <android.support.design.widget.TextInputLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
 
-
-                    <android.support.design.widget.TextInputLayout
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/ed_adhar_card_number"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp">
+                        android:layout_height="match_parent"
+                        android:hint="Aadhar Card Number"
+                        android:inputType="number" />
+                </android.support.design.widget.TextInputLayout>
 
-                        <android.support.design.widget.TextInputEditText
-                            android:id="@+id/ed_adhar_card_number"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:hint="Aadhar Card Number"
-                            android:inputType="number" />
-                    </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
 
-                    <android.support.design.widget.TextInputLayout
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/ed_pan_card_number"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp">
-
-                        <android.support.design.widget.TextInputEditText
-                            android:id="@+id/ed_pan_card_number"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:hint="Pan Card Number"
-                            android:inputType="number" />
-                    </android.support.design.widget.TextInputLayout>
+                        android:layout_height="match_parent"
+                        android:hint="Pan Card Number"
+                        android:inputType="number" />
+                </android.support.design.widget.TextInputLayout>
 
 
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
 
-
-                    <android.support.design.widget.TextInputLayout
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/ed_account_mumber"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp">
-
-                        <android.support.design.widget.TextInputEditText
-                            android:id="@+id/ed_account_mumber"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:hint="Account Number"
-                            android:inputType="number" />
-                    </android.support.design.widget.TextInputLayout>
+                        android:layout_height="match_parent"
+                        android:hint="Account Number"
+                        android:inputType="number" />
+                </android.support.design.widget.TextInputLayout>
 
 
-                    <android.support.design.widget.TextInputLayout
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/ed_ifsc_code"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
-                        >
+                        android:layout_height="match_parent"
+                        android:hint="IFSC Code"
+                        android:inputType="text" />
+                </android.support.design.widget.TextInputLayout>
 
-                        <android.support.design.widget.TextInputEditText
-                            android:id="@+id/ed_ifsc_code"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:hint="IFSC Code"
-                            android:inputType="text" />
-                    </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
 
-                    <android.support.design.widget.TextInputLayout
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/ed_account_holder_number"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp">
+                        android:layout_height="match_parent"
+                        android:hint="Account Holder Name"
+                        android:inputType="text" />
+                </android.support.design.widget.TextInputLayout>
 
-                        <android.support.design.widget.TextInputEditText
-                            android:id="@+id/ed_account_holder_number"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:hint="Account Holder Name"
-                            android:inputType="text"
-                            />
-                    </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
 
-                    <android.support.design.widget.TextInputLayout
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/ed_branch_name"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp">
+                        android:layout_height="match_parent"
+                        android:hint="Branch Name"
+                        android:inputType="text" />
+                </android.support.design.widget.TextInputLayout>
 
-                        <android.support.design.widget.TextInputEditText
-                            android:id="@+id/ed_branch_name"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:hint="Branch Name"
-                            android:inputType="text"
-                            />
-                    </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
 
-                    <android.support.design.widget.TextInputLayout
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/ed_cvv"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp">
+                        android:layout_height="match_parent"
+                        android:hint="CVV"
+                        android:inputType="number"
+                        android:maxLength="3" />
+                </android.support.design.widget.TextInputLayout>
 
-                        <android.support.design.widget.TextInputEditText
-                            android:id="@+id/ed_cvv"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:hint="CVV"
-                            android:maxLength="3"
-                            android:inputType="number"
-                            />
-                    </android.support.design.widget.TextInputLayout>
-
-                </LinearLayout>
+            </LinearLayout>
 
             <Button
+                android:layout_marginBottom="@dimen/margin_20"
                 android:id="@+id/btn_next"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
                 android:layout_marginTop="@dimen/margin_20"
                 android:background="@drawable/sd_button"
-                android:textSize="@dimen/sp20"
-                android:text="@string/text_next"
                 android:gravity="center"
-                android:textColor="@color/c_white"
-                android:layout_width="match_parent"
-                android:layout_height="45dp" />
+                android:text="@string/text_next"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp20" />
         </LinearLayout>
     </ScrollView>
-    </LinearLayout>
+</LinearLayout>
