@@ -5,7 +5,7 @@
         xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
         android:layout_height="match_parent">
         <android.support.v7.widget.Toolbar
-            android:background="@color/c_primary"
+            android:background="@color/colorPrimary"
             android:layout_width="match_parent"
             android:layout_height="?actionBarSize">
             <ImageView
@@ -18,7 +18,7 @@
             <TextView
                 android:layout_gravity="center_horizontal"
                 android:textSize="@dimen/sp20"
-                android:textColor="@color/c_white"
+                android:textColor="@color/white"
                 android:text="Account Details"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
@@ -147,7 +147,7 @@
                 android:textSize="@dimen/sp20"
                 android:text="Submit"
                 android:gravity="center"
-                android:textColor="@color/c_white"
+                android:textColor="@color/white"
                 android:layout_width="match_parent"
                 android:layout_height="45dp" />
         </LinearLayout>

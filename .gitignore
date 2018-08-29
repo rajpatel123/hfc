@@ -37,3 +37,10 @@ nbbuild/
 dist/
 nbdist/
 .nb-gradle/
+app/libs/
+/.gradle
+/.idea/
+/gradle/
+/hfc.iml
+/ChainApp.iml
+/.gradle/

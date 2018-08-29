@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/NewHfc.iml" filepath="$PROJECT_DIR$/NewHfc.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hfc.iml" filepath="$PROJECT_DIR$/hfc.iml" />
     </modules>
   </component>
 </project>
